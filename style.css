@@ -7,7 +7,7 @@ body{
     line-height: 1.6;
     padding: 40px;
 }
-h1{
+.honk-title{
     font-family: 'Honk', cursive;
     font-size: 56px;
   color: #fff;
