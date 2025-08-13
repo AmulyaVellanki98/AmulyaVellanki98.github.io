@@ -9,8 +9,8 @@ body{
 }
 h1{
     font-family: 'Honk', cursive;
-    font-size: 2.5rem;
-    color: #0b3d91;
-    margin-top: 40px;
-    text-align: center;
+    font-size: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px #333;
+  text-align: center;
 }
