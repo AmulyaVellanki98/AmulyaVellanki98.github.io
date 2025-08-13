@@ -14,12 +14,13 @@ body{
   text-shadow: 0 0 10px #333;
   text-align: center;
 }
-#about{
-    font-family: "Indie Flower", cursive;
-    font-size: 20px;
-    color: #333;
-    line-height: 1.7;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
+h2 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #0b3d91; /* calm, readable accent */
 }
+
+p, ul { max-width: 800px; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
