@@ -19,13 +19,14 @@ body {
 
 /* Full-page sections */
 .section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
   padding: 60px 40px;
   position: relative;
+  overflow: hidden;
 }
 
 /* Alternate background colors for sections */
@@ -41,11 +42,7 @@ body {
 .content {
   max-width: 900px;
   width: 100%;
-}
-
-/* Make some sections scrollable if content is too long */
-.content.scrollable {
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: auto;
 }
 
