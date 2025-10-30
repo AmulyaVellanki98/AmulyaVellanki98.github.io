@@ -4,31 +4,33 @@
   padding: 0;
 }
 
-html, body {
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   line-height: 1.6;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Full-page sections */
 .section {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  padding: 40px;
+  padding: 60px 40px;
   position: relative;
+  overflow: hidden;
 }
 
 /* Alternate background colors for sections */
@@ -40,12 +42,11 @@ body {
   background-color: #b3d9f2;
 }
 
-/* Content container */
+/* Content container - NO SCROLLING */
 .content {
   max-width: 900px;
   width: 100%;
-  max-height: 80vh;
-  overflow-y: auto;
+  overflow: visible;
 }
 
 .honk-title {
@@ -82,8 +83,9 @@ h2 {
 }
 
 #about p {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  line-height: 1.6;
 }
 
 p {
@@ -92,12 +94,13 @@ p {
 
 ul {
   padding-left: 25px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 li {
-  margin: 10px 0;
-  line-height: 1.8;
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 15px;
 }
 
 strong {
@@ -116,16 +119,30 @@ a:hover {
 
 /* Experience items */
 .experience-item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.6);
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
+}
+
+.experience-item p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.experience-item ul {
+  margin-top: 5px;
+}
+
+.experience-item li {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 /* Scroll indicator */
 .scroll-indicator {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   animation: bounce 2s infinite;
 }
 
@@ -191,7 +208,7 @@ a:hover {
   }
   
   #about p {
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .nav-dots {
@@ -201,6 +218,10 @@ a:hover {
   .dot {
     width: 10px;
     height: 10px;
+  }
+  
+  li {
+    font-size: 14px;
   }
 }
 
@@ -228,16 +249,25 @@ a:hover {
   }
   
   #about p {
-    font-size: 15px;
+    font-size: 14px;
   }
   
   li {
-    font-size: 14px;
-    margin: 8px 0;
+    font-size: 13px;
+    margin: 6px 0;
   }
   
   .experience-item {
-    padding: 15px;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .experience-item p {
+    font-size: 14px;
+  }
+  
+  .experience-item li {
+    font-size: 13px;
   }
   
   .nav-dots {
