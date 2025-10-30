@@ -9,77 +9,127 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="honk-title">Amulya Vellanki Portfolio</h1>
-  <h2>About</h2>
-  <div id="about">
-    <p>
-      Cybersecurity analyst with 5+ years of experience in network security, SOC operations, and cybersecurity analysis at companies including Verizon and Infosys. 
-      Reduced open-source risk exposure by 60% by implementing automated dependency scanning. Achieved a 35% increase in early vulnerability detection by integrating SAST/DAST pipelines. 
-      Expertise includes SIEM tools (Splunk, Sentinel, ELK), cloud platforms (AWS, Azure, GCP), and security frameworks like NIST and ISO 27001.
-    </p>
-  </div>
-  
-  <h2>Professional Experience</h2>
-  <p><strong>Cyber Security Analyst | Verizon Communications - San Jose, CA | Aug 2024 - Present</strong></p>
-  <ul>
-    <li>Uncovered 20+ vulnerabilities through code reviews and penetration testing on critical applications and public APIs</li>
-    <li>Implemented automated dependency scanning with Snyk and Dependabot, cutting open-source risk exposure by 24%</li>
-    <li>Integrated SAST/DAST tools into CI/CD pipelines, boosting early vulnerability detection by 35%</li>
-  </ul>
+  <!-- Navigation Dots -->
+  <nav class="nav-dots">
+    <a href="#hero" class="dot"></a>
+    <a href="#experience" class="dot"></a>
+    <a href="#skills" class="dot"></a>
+    <a href="#projects" class="dot"></a>
+    <a href="#education" class="dot"></a>
+    <a href="#contact" class="dot"></a>
+  </nav>
 
-  <p><strong>Senior Systems Engineer L1 SOC | Infosys, Hyderabad, India | Aug 2020 - Dec 2022</strong></p>
-  <ul>
-    <li>Conducted in-depth code reviews and penetration testing, uncovering 150+ vulnerabilities</li>
-    <li>Reduced open-source risk exposure windows by 60% through automated dependency scanning</li>
-    <li>Enhanced API security across 8+ public APIs through input validation and authentication policies</li>
-  </ul>
+  <!-- Section 1: Hero/About -->
+  <section id="hero" class="section">
+    <div class="content">
+      <h1 class="honk-title">Amulya Vellanki</h1>
+      <h2 class="subtitle">Cybersecurity Analyst</h2>
+      <div id="about">
+        <p>
+          Cybersecurity analyst with 5+ years of experience in network security, SOC operations, and cybersecurity analysis at companies including Verizon and Infosys. 
+          Reduced open-source risk exposure by 60% by implementing automated dependency scanning. Achieved a 35% increase in early vulnerability detection by integrating SAST/DAST pipelines. 
+          Expertise includes SIEM tools (Splunk, Sentinel, ELK), cloud platforms (AWS, Azure, GCP), and security frameworks like NIST and ISO 27001.
+        </p>
+      </div>
+      <div class="scroll-indicator">
+        <p>Scroll Down ↓</p>
+      </div>
+    </div>
+  </section>
 
-  <p><strong>Network Security Engineer | Hexaware, India | Jan 2019 - July 2020</strong></p>
-  <ul>
-    <li>Managed and monitored firewalls, VPNs, and intrusion prevention systems</li>
-    <li>Performed vulnerability assessments, patch management, and endpoint protection monitoring</li>
-    <li>Conducted security awareness training for employees on phishing prevention and data protection</li>
-  </ul>
+  <!-- Section 2: Professional Experience -->
+  <section id="experience" class="section">
+    <div class="content">
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <p><strong>Cyber Security Analyst | Verizon Communications - San Jose, CA | Aug 2024 - Present</strong></p>
+        <ul>
+          <li>Uncovered 20+ vulnerabilities through code reviews and penetration testing on critical applications and public APIs</li>
+          <li>Implemented automated dependency scanning with Snyk and Dependabot, cutting open-source risk exposure by 24%</li>
+          <li>Integrated SAST/DAST tools into CI/CD pipelines, boosting early vulnerability detection by 35%</li>
+        </ul>
+      </div>
 
-  <h2>Skills & Tools</h2>
-  <ul>
-    <li>Cloud & Infrastructure Security: AWS (IAM, VPC, EC2, S3, Lambda, CloudTrail, GuardDuty), Azure Security Center, GCP, Terraform, Kubernetes</li>
-    <li>Endpoint & Identity Security: CrowdStrike Falcon, Microsoft Defender, Carbon Black, SentinelOne, IAM, PAM, MFA/SSO (Okta, Azure AD)</li>
-    <li>Application Security: Secure SDLC, OWASP Top 10, SAST/DAST (SonarQube, OWASP ZAP, Burp Suite, Checkmarx), Snyk, Dependabot</li>
-    <li>Monitoring & Detection: SIEM (Splunk, ELK Stack, Microsoft Sentinel), IDS/IPS (Suricata, Zeek, Snort), SOAR, MITRE ATT&CK Framework</li>
-    <li>Network & Vulnerability Management: Firewall Management (Palo Alto, Fortinet, Cisco ASA), Vulnerability Assessment (Nessus, Qualys), Penetration Testing (Metasploit, Nmap)</li>
-    <li>Automation & Scripting: Python, Bash, PowerShell, Go, REST APIs, YAML, JSON</li>
-    <li>Governance, Risk & Compliance: NIST 800-53, NIST CSF, ISO 27001, PCI DSS, CIS Benchmarks, SOC 2, HIPAA, GDPR</li>
-  </ul>
+      <div class="experience-item">
+        <p><strong>Senior Systems Engineer L1 SOC | Infosys, Hyderabad, India | Aug 2020 - Dec 2022</strong></p>
+        <ul>
+          <li>Conducted in-depth code reviews and penetration testing, uncovering 150+ vulnerabilities</li>
+          <li>Reduced open-source risk exposure windows by 60% through automated dependency scanning</li>
+          <li>Enhanced API security across 8+ public APIs through input validation and authentication policies</li>
+        </ul>
+      </div>
 
-  <h2>Projects / Labs</h2>
-  <ul>
-    <li>Network Traffic Analysis & Detection Simulation – Analyzed 10,000+ network packets using Wireshark and Python, achieving 98% detection rate for anomalies</li>
-    <li>Incident Response Workbook Simulation – Developed incident response documentation aligned with MITRE ATT&CK and NIST 800-61 frameworks</li>
-    <li>Alert Tuning & Rule Simulation Using Splunk – Configured and tuned 50+ Splunk correlation searches, reducing alert noise by 30%</li>
-  </ul>
+      <div class="experience-item">
+        <p><strong>Network Security Engineer | Hexaware, India | Jan 2019 - July 2020</strong></p>
+        <ul>
+          <li>Managed and monitored firewalls, VPNs, and intrusion prevention systems</li>
+          <li>Performed vulnerability assessments, patch management, and endpoint protection monitoring</li>
+          <li>Conducted security awareness training for employees on phishing prevention and data protection</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>Master of Science in Cybersecurity Engineering | University of New Hampshire, Manchester, NH | Jan 2023 - Dec 2024</li>
-    <li>Bachelor of Technology - Computer Science Engineering | VIZB, Visakhapatnam, India | May 2015 - Apr 2019</li>
-  </ul>
+  <!-- Section 3: Skills & Tools -->
+  <section id="skills" class="section">
+    <div class="content scrollable">
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li><strong>Cloud & Infrastructure Security:</strong> AWS (IAM, VPC, EC2, S3, Lambda, CloudTrail, GuardDuty), Azure Security Center, GCP, Terraform, Kubernetes</li>
+        <li><strong>Endpoint & Identity Security:</strong> CrowdStrike Falcon, Microsoft Defender, Carbon Black, SentinelOne, IAM, PAM, MFA/SSO (Okta, Azure AD)</li>
+        <li><strong>Application Security:</strong> Secure SDLC, OWASP Top 10, SAST/DAST (SonarQube, OWASP ZAP, Burp Suite, Checkmarx), Snyk, Dependabot</li>
+        <li><strong>Monitoring & Detection:</strong> SIEM (Splunk, ELK Stack, Microsoft Sentinel), IDS/IPS (Suricata, Zeek, Snort), SOAR, MITRE ATT&CK Framework</li>
+        <li><strong>Network & Vulnerability Management:</strong> Firewall Management (Palo Alto, Fortinet, Cisco ASA), Vulnerability Assessment (Nessus, Qualys), Penetration Testing (Metasploit, Nmap)</li>
+        <li><strong>Automation & Scripting:</strong> Python, Bash, PowerShell, Go, REST APIs, YAML, JSON</li>
+        <li><strong>Governance, Risk & Compliance:</strong> NIST 800-53, NIST CSF, ISO 27001, PCI DSS, CIS Benchmarks, SOC 2, HIPAA, GDPR</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Certifications</h2>
-  <ul>
-    <li><a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.QfZtNi1P">Applied Cyber Security Essentials by Purdue</a></li>
-    <li><a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.V6uNbmGx">Enterprise Security</a></li>
-    <li><a href="https://www.credly.com/badges/77094391-7311-4b5d-ad4b-bb3903e7d4cb/public_url">CompTIA Security+</a></li>
-    <li>CompTIA PenTest+</li>
-    <li><a href="https://coursera.org/share/fe653a5457583e4691f7ceba60298c85">Google Cybersecurity Professional Certificate</a></li>
-    <li>CCNA, CySA+, AWS Fundamentals Specialization</li>
-  </ul>
+  <!-- Section 4: Projects -->
+  <section id="projects" class="section">
+    <div class="content">
+      <h2>Projects / Labs</h2>
+      <ul>
+        <li><strong>Network Traffic Analysis & Detection Simulation</strong> – Analyzed 10,000+ network packets using Wireshark and Python, achieving 98% detection rate for anomalies</li>
+        <li><strong>Incident Response Workbook Simulation</strong> – Developed incident response documentation aligned with MITRE ATT&CK and NIST 800-61 frameworks</li>
+        <li><strong>Alert Tuning & Rule Simulation Using Splunk</strong> – Configured and tuned 50+ Splunk correlation searches, reducing alert noise by 30%</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Contact Info</h2>
-  <p>
-    Email: <a href="mailto:amulyavellanki4@gmail.com">amulyavellanki4@gmail.com</a><br>
-    GitHub: <a href="https://github.com/AmulyaVellanki98">https://github.com/AmulyaVellanki98</a><br>
-    LinkedIn: <a href="https://www.linkedin.com/in/amulyavellanki/">https://www.linkedin.com/in/amulyavellanki/</a>
-  </p>
+  <!-- Section 5: Education & Certifications -->
+  <section id="education" class="section">
+    <div class="content scrollable">
+      <h2>Education</h2>
+      <ul>
+        <li>Master of Science in Cybersecurity Engineering | University of New Hampshire, Manchester, NH | Jan 2023 - Dec 2024</li>
+        <li>Bachelor of Technology - Computer Science Engineering | VIZB, Visakhapatnam, India | May 2015 - Apr 2019</li>
+      </ul>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li><a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.QfZtNi1P">Applied Cyber Security Essentials by Purdue</a></li>
+        <li><a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.V6uNbmGx">Enterprise Security</a></li>
+        <li><a href="https://www.credly.com/badges/77094391-7311-4b5d-ad4b-bb3903e7d4cb/public_url">CompTIA Security+</a></li>
+        <li>CompTIA PenTest+</li>
+        <li><a href="https://coursera.org/share/fe653a5457583e4691f7ceba60298c85">Google Cybersecurity Professional Certificate</a></li>
+        <li>CCNA, CySA+, AWS Fundamentals Specialization</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 6: Contact -->
+  <section id="contact" class="section">
+    <div class="content">
+      <h2>Contact Info</h2>
+      <p>
+        Email: <a href="mailto:amulyavellanki4@gmail.com">amulyavellanki4@gmail.com</a><br>
+        GitHub: <a href="https://github.com/AmulyaVellanki98" target="_blank">https://github.com/AmulyaVellanki98</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/amulyavellanki/" target="_blank">https://www.linkedin.com/in/amulyavellanki/</a>
+      </p>
+    </div>
+  </section>
+
 </body>
 </html>
