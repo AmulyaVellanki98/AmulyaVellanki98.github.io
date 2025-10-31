@@ -1,206 +1,413 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amulya Vellanki Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <title>Amulya Vellanki | Cybersecurity Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Dots -->
-  <nav class="nav-dots">
-    <a href="#hero" class="dot"></a>
-    <a href="#experience" class="dot"></a>
-    <a href="#skills" class="dot"></a>
-    <a href="#projects" class="dot"></a>
-    <a href="#education" class="dot"></a>
-    <a href="#contact" class="dot"></a>
+  <!-- Fixed Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">Amulya Vellanki</div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active" data-section="0">Home</a>
+        <a href="#about" class="nav-link" data-section="1">About</a>
+        <a href="#experience" class="nav-link" data-section="2">Experience</a>
+        <a href="#skills" class="nav-link" data-section="3">Skills</a>
+        <a href="#projects" class="nav-link" data-section="4">Projects</a>
+        <a href="#education" class="nav-link" data-section="5">Education</a>
+        <a href="#contact" class="nav-link" data-section="6">Contact</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </nav>
 
-  <!-- Section 1: Hero/About -->
-  <section id="hero" class="section">
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#hero" class="mobile-link" data-section="0">Home</a>
+    <a href="#about" class="mobile-link" data-section="1">About</a>
+    <a href="#experience" class="mobile-link" data-section="2">Experience</a>
+    <a href="#skills" class="mobile-link" data-section="3">Skills</a>
+    <a href="#projects" class="mobile-link" data-section="4">Projects</a>
+    <a href="#education" class="mobile-link" data-section="5">Education</a>
+    <a href="#contact" class="mobile-link" data-section="6">Contact</a>
+  </div>
+
+  <!-- Progress Indicator -->
+  <div class="progress-indicator">
+    <div class="progress-bar"></div>
+  </div>
+
+  <!-- Section 1: Hero -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-background"></div>
+    <div class="content hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="text-line">Amulya Vellanki</span>
+        </h1>
+        <p class="hero-subtitle">Cybersecurity Analyst</p>
+        <p class="hero-tagline">Securing Digital Infrastructure | 5+ Years Experience</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- Section 2: About -->
+  <section id="about" class="section about-section">
     <div class="content">
-      <h1 class="honk-title">Amulya Vellanki</h1>
-      <h2 class="subtitle">Cybersecurity Analyst</h2>
-      <div id="about">
-        <p>
-          Cybersecurity analyst with 5+ years of experience in network security, SOC operations, and cybersecurity analysis at companies including Verizon and Infosys. 
-          Reduced open-source risk exposure by 60% by implementing automated dependency scanning. Achieved a 35% increase in early vulnerability detection by integrating SAST/DAST pipelines. 
-          Expertise includes SIEM tools (Splunk, Sentinel, ELK), cloud platforms (AWS, Azure, GCP), and security frameworks like NIST and ISO 27001.
+      <div class="section-header">
+        <span class="section-tag">Introduction</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-card">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3 class="stat-number">5+</h3>
+              <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">60%</h3>
+              <p class="stat-label">Risk Reduction</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">35%</h3>
+              <p class="stat-label">Detection Increase</p>
+            </div>
+          </div>
+          <p class="about-text">
+            Cybersecurity analyst with 5+ years of experience in network security, SOC operations, and cybersecurity analysis at companies including Verizon and Infosys. 
+            Reduced open-source risk exposure by 60% by implementing automated dependency scanning. Achieved a 35% increase in early vulnerability detection by integrating SAST/DAST pipelines. 
+            Expertise includes SIEM tools (Splunk, Sentinel, ELK), cloud platforms (AWS, Azure, GCP), and security frameworks like NIST and ISO 27001.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Professional Experience -->
+  <section id="experience" class="section experience-section">
+    <div class="content">
+      <div class="section-header">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Cyber Security Analyst</h3>
+              <span class="timeline-date">Aug 2024 - Present</span>
+            </div>
+            <p class="timeline-company">Verizon Communications - San Jose, CA</p>
+            <ul class="timeline-list">
+              <li>Uncovered 20+ vulnerabilities through code reviews and penetration testing on critical applications and public APIs</li>
+              <li>Implemented automated dependency scanning with Snyk and Dependabot, cutting open-source risk exposure by 24%</li>
+              <li>Integrated SAST/DAST tools into CI/CD pipelines, boosting early vulnerability detection by 35%</li>
+              <li>Improved API and endpoint security by implementing input validation, token-based authentication, and rate limiting across 8+ public APIs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior Systems Engineer L1 SOC</h3>
+              <span class="timeline-date">Aug 2020 - Dec 2022</span>
+            </div>
+            <p class="timeline-company">Infosys, Hyderabad, India</p>
+            <ul class="timeline-list">
+              <li>Conducted in-depth code reviews and penetration testing, uncovering 150+ vulnerabilities</li>
+              <li>Reduced open-source risk exposure windows by 60% through automated dependency scanning</li>
+              <li>Enhanced API security across 8+ public APIs through input validation and authentication policies</li>
+              <li>Integrated SAST/DAST pipelines, increasing defect detection rates by 35% during early development stages</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Network Security Engineer</h3>
+              <span class="timeline-date">Jan 2019 - July 2020</span>
+            </div>
+            <p class="timeline-company">Hexaware, India</p>
+            <ul class="timeline-list">
+              <li>Managed and monitored firewalls, VPNs, and intrusion prevention systems</li>
+              <li>Performed vulnerability assessments, patch management, and endpoint protection monitoring</li>
+              <li>Conducted security awareness training for employees on phishing prevention and data protection</li>
+              <li>Assisted in designing and implementing firewall and Active Directory Server configurations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Skills -->
+  <section id="skills" class="section skills-section">
+    <div class="content">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud & Infrastructure Security</h3>
+          <p>AWS (IAM, VPC, EC2, S3, Lambda, CloudTrail, GuardDuty), Azure Security Center, GCP, Terraform, Kubernetes, CSPM, Zero Trust Architecture</p>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">🛡️</div>
+          <h3>Endpoint & Identity Security</h3>
+          <p>CrowdStrike Falcon, Microsoft Defender, Carbon Black, SentinelOne, IAM, PAM, MFA/SSO (Okta, Azure AD), MDM</p>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">🔒</div>
+          <h3>Application Security</h3>
+          <p>Secure SDLC, OWASP Top 10, SAST/DAST (SonarQube, OWASP ZAP, Burp Suite, Checkmarx), Snyk, Dependabot, API Security</p>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">📊</div>
+          <h3>Monitoring & Detection</h3>
+          <p>SIEM (Splunk, ELK Stack, Microsoft Sentinel), IDS/IPS (Suricata, Zeek, Snort), SOAR, MITRE ATT&CK Framework, Threat Hunting</p>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">🌐</div>
+          <h3>Network & Vulnerability Management</h3>
+          <p>Firewall Management (Palo Alto, Fortinet, Cisco ASA), Vulnerability Assessment (Nessus, Qualys), Penetration Testing (Metasploit, Nmap)</p>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">⚙️</div>
+          <h3>Automation & Scripting</h3>
+          <p>Python, Bash, PowerShell, Go, REST APIs, YAML, JSON, CI/CD Security (GitHub Actions, Jenkins)</p>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">📋</div>
+          <h3>Governance, Risk & Compliance</h3>
+          <p>NIST 800-53, NIST CSF, ISO 27001, PCI DSS, CIS Benchmarks, SOC 2, HIPAA, GDPR</p>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">🔍</div>
+          <h3>Incident Response & Forensics</h3>
+          <p>DFIR (Volatility, Autopsy, FTK Imager), Packet Analysis (Wireshark, tcpdump), Detection-as-Code (Sigma, YARA)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Projects -->
+  <section id="projects" class="section projects-section">
+    <div class="content">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🔐</div>
+            <h3>VAPT: Strategic Vulnerability Analysis and Advanced Penetration Testing</h3>
+          </div>
+          <p class="project-description">
+            Analyzed threats, monitored security trends, mastered SIEM tools, conducted Nessus scans, and contributed to a 90% patch rate.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Vulnerability Assessment</span>
+            <span class="tag">Penetration Testing</span>
+            <span class="tag">Nessus</span>
+            <span class="tag">SIEM</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">📊</div>
+            <h3>Advanced Threat Intelligence Dashboard with Predictive Analytics</h3>
+          </div>
+          <p class="project-description">
+            Built a Splunk dashboard integrating threat feeds and predictive analytics, achieving 92% accuracy and enhancing cyber defence.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Splunk</span>
+            <span class="tag">Threat Intelligence</span>
+            <span class="tag">Predictive Analytics</span>
+            <span class="tag">Dashboard</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🤖</div>
+            <h3>Secure AI Chatbot</h3>
+          </div>
+          <p class="project-description">
+            Developed ChatGPT-4-powered assistant using LangChain and RAG with vector storage, implementing input validation, sanitization, and security controls to prevent prompt injection and ensure safe, context-aware query responses.
+          </p>
+          <div class="project-tags">
+            <span class="tag">ChatGPT-4</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Security Controls</span>
+          </div>
+          <a href="https://github.com/AmulyaVellanki98" target="_blank" class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Education -->
+  <section id="education" class="section education-section">
+    <div class="content">
+      <div class="section-header">
+        <span class="section-tag">Qualifications</span>
+        <h2 class="section-title">Education & Certifications</h2>
+      </div>
+      
+      <div class="education-grid">
+        <div class="education-column">
+          <h3 class="column-title">Education</h3>
+          <div class="education-item">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-details">
+              <h4>Master of Science in Cybersecurity Engineering</h4>
+              <p class="edu-school">University of New Hampshire, Manchester, NH</p>
+              <p class="edu-date">Jan 2023 - Dec 2024</p>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-details">
+              <h4>Bachelor of Technology - Computer Science Engineering</h4>
+              <p class="edu-school">VIZB, Visakhapatnam, India</p>
+              <p class="edu-date">May 2015 - Apr 2019</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-column">
+          <h3 class="column-title">Certifications</h3>
+          <div class="certifications-list">
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.QfZtNi1P" target="_blank">Applied Cyber Security Essentials by Purdue</a>
+            </div>
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.V6uNbmGx" target="_blank">Enterprise Security</a>
+            </div>
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <a href="https://www.credly.com/badges/77094391-7311-4b5d-ad4b-bb3903e7d4cb/public_url" target="_blank">CompTIA Security+</a>
+            </div>
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <span>CompTIA PenTest+</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <a href="https://coursera.org/share/fe653a5457583e4691f7ceba60298c85" target="_blank">Google Cybersecurity Professional Certificate</a>
+            </div>
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <span>CCNA</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <span>CySA+</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-check">✓</span>
+              <span>AWS Fundamentals Specialization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Contact -->
+  <section id="contact" class="section contact-section">
+    <div class="content">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Information</h2>
+      </div>
+      
+      <div class="contact-content">
+        <p class="contact-intro">
+          I'm always open to discussing new opportunities, collaborations, or cybersecurity challenges. Feel free to reach out!
         </p>
-      </div>
-      <div class="scroll-indicator">
-        <p>Scroll Down ↓</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 2: Professional Experience -->
-  <section id="experience" class="section">
-    <div class="content">
-      <h2>Professional Experience</h2>
-      <div class="experience-item">
-        <p><strong>Cyber Security Analyst | Verizon Communications - San Jose, CA | Aug 2024 - Present</strong></p>
-        <ul>
-          <li>Uncovered 20+ vulnerabilities through code reviews and penetration testing on critical applications and public APIs</li>
-          <li>Implemented automated dependency scanning with Snyk and Dependabot, cutting open-source risk exposure by 24%</li>
-          <li>Integrated SAST/DAST tools into CI/CD pipelines, boosting early vulnerability detection by 35%</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <p><strong>Senior Systems Engineer L1 SOC | Infosys, Hyderabad, India | Aug 2020 - Dec 2022</strong></p>
-        <ul>
-          <li>Conducted in-depth code reviews and penetration testing, uncovering 150+ vulnerabilities</li>
-          <li>Reduced open-source risk exposure windows by 60% through automated dependency scanning</li>
-          <li>Enhanced API security across 8+ public APIs through input validation and authentication policies</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <p><strong>Network Security Engineer | Hexaware, India | Jan 2019 - July 2020</strong></p>
-        <ul>
-          <li>Managed and monitored firewalls, VPNs, and intrusion prevention systems</li>
-          <li>Performed vulnerability assessments, patch management, and endpoint protection monitoring</li>
-          <li>Conducted security awareness training for employees on phishing prevention and data protection</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 3: Skills & Tools -->
-  <section id="skills" class="section">
-    <div class="content">
-      <h2>Skills & Tools</h2>
-      <ul>
-        <li><strong>Cloud & Infrastructure Security:</strong> AWS (IAM, VPC, EC2, S3, Lambda, CloudTrail, GuardDuty), Azure Security Center, GCP, Terraform, Kubernetes</li>
-        <li><strong>Endpoint & Identity Security:</strong> CrowdStrike Falcon, Microsoft Defender, Carbon Black, SentinelOne, IAM, PAM, MFA/SSO (Okta, Azure AD)</li>
-        <li><strong>Application Security:</strong> Secure SDLC, OWASP Top 10, SAST/DAST (SonarQube, OWASP ZAP, Burp Suite, Checkmarx), Snyk, Dependabot</li>
-        <li><strong>Monitoring & Detection:</strong> SIEM (Splunk, ELK Stack, Microsoft Sentinel), IDS/IPS (Suricata, Zeek, Snort), SOAR, MITRE ATT&CK Framework</li>
-        <li><strong>Network & Vulnerability Management:</strong> Firewall Management (Palo Alto, Fortinet, Cisco ASA), Vulnerability Assessment (Nessus, Qualys), Penetration Testing (Metasploit, Nmap)</li>
-        <li><strong>Automation & Scripting:</strong> Python, Bash, PowerShell, Go, REST APIs, YAML, JSON</li>
-        <li><strong>Governance, Risk & Compliance:</strong> NIST 800-53, NIST CSF, ISO 27001, PCI DSS, CIS Benchmarks, SOC 2, HIPAA, GDPR</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section 4: Projects -->
-  <section id="projects" class="section">
-    <div class="content">
-      <h2>Projects / Labs</h2>
-      <ul>
-        <li><strong>Network Traffic Analysis & Detection Simulation</strong> – Analyzed 10,000+ network packets using Wireshark and Python, achieving 98% detection rate for anomalies</li>
-        <li><strong>Incident Response Workbook Simulation</strong> – Developed incident response documentation aligned with MITRE ATT&CK and NIST 800-61 frameworks</li>
-        <li><strong>Alert Tuning & Rule Simulation Using Splunk</strong> – Configured and tuned 50+ Splunk correlation searches, reducing alert noise by 30%</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section 5: Education & Certifications -->
-  <section id="education" class="section">
-    <div class="content">
-      <h2>Education</h2>
-      <ul>
-        <li>Master of Science in Cybersecurity Engineering | University of New Hampshire, Manchester, NH | Jan 2023 - Dec 2024</li>
-        <li>Bachelor of Technology - Computer Science Engineering | VIZB, Visakhapatnam, India | May 2015 - Apr 2019</li>
-      </ul>
-
-      <h2 style="margin-top: 30px;">Certifications</h2>
-      <ul>
-        <li><a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.QfZtNi1P" target="_blank">Applied Cyber Security Essentials by Purdue</a></li>
-        <li><a href="https://www.credential.net/9ca101ce-cdcf-4a32-9a59-0e22c358679c#acc.V6uNbmGx" target="_blank">Enterprise Security</a></li>
-        <li><a href="https://www.credly.com/badges/77094391-7311-4b5d-ad4b-bb3903e7d4cb/public_url" target="_blank">CompTIA Security+</a></li>
-        <li>CompTIA PenTest+</li>
-        <li><a href="https://coursera.org/share/fe653a5457583e4691f7ceba60298c85" target="_blank">Google Cybersecurity Professional Certificate</a></li>
-        <li>CCNA, CySA+, AWS Fundamentals Specialization</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section 6: Contact -->
-  <section id="contact" class="section">
-    <div class="content">
-      <h2>Contact Info</h2>
-      <p class="contact-info">
-        Email: <a href="mailto:amulyavellanki4@gmail.com">amulyavellanki4@gmail.com</a><br>
-        GitHub: <a href="https://github.com/AmulyaVellanki98" target="_blank">https://github.com/AmulyaVellanki98</a><br>
-        LinkedIn: <a href="https://www.linkedin.com/in/amulyavellanki/" target="_blank">https://www.linkedin.com/in/amulyavellanki/</a>
-      </p>
-    </div>
-  </section>
-<script>
-let currentSection = 0;
-const sections = document.querySelectorAll('.section');
-let isScrolling = false;
-
-// Scroll to section
-function scrollToSection(index) {
-    if (index >= 0 && index < sections.length) {
-        sections[index].scrollIntoView({ behavior: 'smooth' });
-        currentSection = index;
         
-        // Update dots
-        document.querySelectorAll('.dot').forEach((dot, i) => {
-            dot.style.background = i === index ? '#0b3d91' : 'rgba(11, 61, 145, 0.4)';
-        });
-    }
-}
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:amulyavellanki4@gmail.com">amulyavellanki4@gmail.com</a>
+            </div>
+          </div>
 
-// Mouse wheel handler
-window.addEventListener('wheel', function(e) {
-    e.preventDefault();
-    
-    if (!isScrolling) {
-        isScrolling = true;
-        
-        if (e.deltaY > 0 && currentSection < sections.length - 1) {
-            // Scroll down
-            scrollToSection(currentSection + 1);
-        } else if (e.deltaY < 0 && currentSection > 0) {
-            // Scroll up
-            scrollToSection(currentSection - 1);
-        }
-        
-        setTimeout(() => { isScrolling = false; }, 1000);
-    }
-}, { passive: false });
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/amulyavellanki/" target="_blank">linkedin.com/in/amulyavellanki</a>
+            </div>
+          </div>
 
-// Dot navigation
-document.querySelectorAll('.dot').forEach((dot, index) => {
-    dot.addEventListener('click', function(e) {
-        e.preventDefault();
-        scrollToSection(index);
-    });
-});
+          <div class="contact-item">
+            <div class="contact-icon">💻</div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <a href="https://github.com/AmulyaVellanki98" target="_blank">github.com/AmulyaVellanki98</a>
+            </div>
+          </div>
 
-// Keyboard navigation
-window.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowDown' && currentSection < sections.length - 1) {
-        e.preventDefault();
-        scrollToSection(currentSection + 1);
-    } else if (e.key === 'ArrowUp' && currentSection > 0) {
-        e.preventDefault();
-        scrollToSection(currentSection - 1);
-    }
-});
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Santa Clara, CA (Open to Relocate)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-// Touch for mobile
-let touchStart = 0;
-window.addEventListener('touchstart', e => touchStart = e.touches[0].clientY);
-window.addEventListener('touchend', function(e) {
-    const touchEnd = e.changedTouches[0].clientY;
-    const diff = touchStart - touchEnd;
-    
-    if (Math.abs(diff) > 50 && !isScrolling) {
-        if (diff > 0 && currentSection < sections.length - 1) {
-            scrollToSection(currentSection + 1);
-        } else if (diff < 0 && currentSection > 0) {
-            scrollToSection(currentSection - 1);
-        }
-    }
-});
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
