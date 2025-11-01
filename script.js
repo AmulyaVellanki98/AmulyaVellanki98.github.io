@@ -6,6 +6,55 @@ document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
   const progressBar = document.querySelector('.progress-bar');
+  const cursorBlob = document.querySelector('.cursor-blob');
+
+  // Myriad-style Custom Cursor
+  let mouseX = 0;
+  let mouseY = 0;
+  let blobX = 0;
+  let blobY = 0;
+  const speed = 0.15; // Smoothness factor - lower = smoother/slower
+
+  // Track mouse movement
+  document.addEventListener('mousemove', function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  // Smooth cursor blob animation
+  function animateCursor() {
+    // Smooth easing calculation
+    const distX = mouseX - blobX;
+    const distY = mouseY - blobY;
+    
+    blobX += distX * speed;
+    blobY += distY * speed;
+    
+    cursorBlob.style.left = blobX + 'px';
+    cursorBlob.style.top = blobY + 'px';
+    
+    requestAnimationFrame(animateCursor);
+  }
+  
+  // Start cursor animation
+  animateCursor();
+
+  // Cursor hover effects
+  const interactiveElements = document.querySelectorAll('a, button, .skill-category, .project-card, .contact-item');
+  
+  interactiveElements.forEach(element => {
+    element.addEventListener('mouseenter', function() {
+      cursorBlob.style.width = '60px';
+      cursorBlob.style.height = '60px';
+      cursorBlob.style.filter = 'blur(30px)';
+    });
+    
+    element.addEventListener('mouseleave', function() {
+      cursorBlob.style.width = '40px';
+      cursorBlob.style.height = '40px';
+      cursorBlob.style.filter = 'blur(20px)';
+    });
+  });
 
   // Mobile menu toggle
   hamburger.addEventListener('click', function() {
@@ -146,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Typing effect for hero title (optional enhancement)
+  // Typing effect for hero title
   const heroTitle = document.querySelector('.hero-title .text-line');
   if (heroTitle) {
     const text = heroTitle.textContent;
@@ -170,6 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
   timelineDots.forEach(dot => {
     dot.addEventListener('mouseenter', function() {
       this.style.transform = 'translateX(-50%) scale(1.5)';
+      this.style.transition = 'transform 0.3s ease';
     });
     dot.addEventListener('mouseleave', function() {
       this.style.transform = 'translateX(-50%) scale(1)';
@@ -215,13 +265,10 @@ document.addEventListener('DOMContentLoaded', function() {
     return currentIndex;
   }
 
-  // Add scroll snap for better section navigation (optional)
+  // Mouse wheel smooth scroll (optional)
   let isScrolling = false;
-  let scrollTimer;
-
+  
   window.addEventListener('wheel', function(e) {
-    clearTimeout(scrollTimer);
-    
     if (!isScrolling && Math.abs(e.deltaY) > 50) {
       isScrolling = true;
       
@@ -278,7 +325,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const email = this.textContent;
       if (navigator.clipboard) {
         navigator.clipboard.writeText(email).then(() => {
-          // Optional: Show a toast notification
           showNotification('Email copied to clipboard!');
         });
       }
@@ -292,11 +338,11 @@ document.addEventListener('DOMContentLoaded', function() {
       position: fixed;
       bottom: 30px;
       right: 30px;
-      background: var(--primary-color);
+      background: linear-gradient(135deg, #3b82f6, #ec4899);
       color: white;
       padding: 1rem 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
       z-index: 10000;
       animation: slideInRight 0.3s ease;
     `;
@@ -333,4 +379,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   `;
   document.head.appendChild(style);
+
+  // Hide cursor blob on mobile devices
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    cursorBlob.style.display = 'none';
+  }
 });
