@@ -195,25 +195,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Typing effect for hero title
-  const heroTitle = document.querySelector('.hero-title .text-line');
-  if (heroTitle) {
-    const text = heroTitle.textContent;
-    heroTitle.textContent = '';
-    let charIndex = 0;
-
-    function typeWriter() {
-      if (charIndex < text.length) {
-        heroTitle.textContent += text.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeWriter, 100);
-      }
-    }
-
-    // Start typing effect after a short delay
-    setTimeout(typeWriter, 500);
-  }
-
   // Add hover effect to timeline dots
   const timelineDots = document.querySelectorAll('.timeline-dot');
   timelineDots.forEach(dot => {
